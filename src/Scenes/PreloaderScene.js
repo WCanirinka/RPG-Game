@@ -79,13 +79,13 @@ export default class PreloaderScene extends Phaser.Scene {
       frameHeight: 100,
     });
 
-    this.load.image('animeHero1', '');
-    this.load.image('animeHero2', '');
-    this.load.image('enemy1', '');
-    this.load.image('enemy2', '');
-    this.load.image('enemy3', '');
-    this.load.image('gust', '');
-    this.load.image('master', '');
+    this.load.image('Menelik', '/assets/map/alienHero.gif');
+    this.load.image('Lumumba', '/assets/map/alienHero2.jpg');
+    this.load.image('Colon', '/assets/map/colon1.png');
+    this.load.image('Colon1', '/assets/map/colon2.png');
+    this.load.image('Colon2', '/assets/map/colon3.png');
+    this.load.image('Kiranga', '/assets/map/kiranga.png');
+    this.load.image('King', '/assets/master.png');
   }
 
   ready() {
