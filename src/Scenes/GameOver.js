@@ -2,9 +2,9 @@
 import 'phaser';
 
 import config from '../Config/config';
-import Button from '../Objects/Buttons';
+import Button from '../Objects/Button';
 import getCurrentScore from '../localStorage';
-import score from './Fight';
+import score from './Battle';
 
 
 export default class GameOver extends Phaser.Scene {
@@ -13,7 +13,7 @@ export default class GameOver extends Phaser.Scene {
   }
 
   create() {
-    this.menuButton = new Button(this, 400, 400, 'button1', 'button2', 'Main Menu');
+    this.menuButton = new Button(this, 400, 400, 'blueButton1', 'blueButton2', 'Main Menu');
     this.add.image(400, 270, 'axe');
     this.madeByText = this.add.text(
       0,

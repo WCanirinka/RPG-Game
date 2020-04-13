@@ -2,74 +2,67 @@
 /* eslint-disable no-restricted-globals */
 const fetch = require('node-fetch');
 
-const connection = (() => {
-  const createGame = async () => {
-    const name = {
-      name: 'African-Jungle',
-    };
-
-    const game = JSON.stringify();
-    const addressUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-    const settings = {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: game,
-    };
-
-    const response = await fetch(addressUrl, settings);
-    const answer = await response.json();
-    return answer;
+const createGame = async () => {
+  const name = {
+    name: 'Forest-Defender',
   };
-
-  const submitScore = async () => {
-    const submit = {
-      user: name,
-      score,
-    };
-
-    const post = JSON.stringify(submit);
-    const addressUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uyTWdefGYb1d0pIVy2jN/scores/';
-    const settings = {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: post,
-    };
-    const response = await fetch(addressUrl, settings);
-    const answer = await response.json;
-    return answer;
+  const game = JSON.stringify(name);
+  const address = 'https://us-central1-js-capstone-backend.cloudconsts.net/api/games/';
+  const settings = {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: game,
   };
+  const response = await fetch(address, settings);
+  const answer = await response.json();
+  return answer;
+};
 
-  const sortingObject = (object) => {
-    const arr = [];
-    for (let i = 0; i < object.length; i += 1) {
-      arr.push([object[i].score, object[i].user]);
-    }
-    return Array.from(arr).sort((a, b) => b[0] - a[0]);
+const submitScore = async (name, score) => {
+  const submit = {
+    user: name,
+    score,
   };
-
-  const getScoreBoard = async () => {
-    const addressUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uyTWdefGYb1d0pIVy2jN/scores/';
-    const settings = {
-      method: 'GET',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-    };
-    const response = await fetch(addressUrl, settings);
-    const answer = await response.json();
-    return sortingObject(answer.result);
+  const post = JSON.stringify(submit);
+  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/XHg3mRHc25dQtUcRlLYE/scores/';
+  const settings = {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: post,
   };
+  const response = await fetch(address, settings);
+  const answer = await response.json();
+  return answer;
+};
 
-  return {
-    createGame, submitScore, getScoreBoard,
+const sorting = (obj) => {
+  const array = [];
+  for (let i = 0; i < obj.length; i += 1) {
+    array.push([obj[i].score, obj[i].user]);
+  }
+  return Array.from(array).sort((a, b) => b[0] - a[0]);
+};
+
+const getScoreBoard = async () => {
+  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/XHg3mRHc25dQtUcRlLYE/scores/';
+  const settings = {
+    method: 'GET',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
   };
-})();
+  const response = await fetch(address, settings);
+  const answer = await response.json();
+  return sorting(answer.result);
+};
 
-export default connection;
+export {
+  submitScore, createGame, getScoreBoard,
+};

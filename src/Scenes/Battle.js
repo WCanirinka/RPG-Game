@@ -1,8 +1,12 @@
+/* eslint-disable import/no-cycle */
 /* eslint-disable no-param-reassign */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable no-undef */
 
 import 'phaser';
+import {
+  scoreUpdate, powerAssign, enemySelect,
+} from '../helper';
 
 const Battle = (() => {
   let score = 0;

@@ -75,37 +75,38 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.timeEvent = this.time.delayedCall(5000, this.ready, [], this);
 
-    this.load.image('button1', '/assets/decor/bt1.png');
-    this.load.image('button2', '/assets/decor/bt2.png');
-    this.load.image('mute', '/assets/decor/mute.png');
-    this.load.image('unmute', '/assets/decor/unmute.png');
-    this.load.audio('startMusic', '/assets/sounds/StartTheme.ogg');
-    this.load.audio('select', '/assets/sounds/select.wav');
-    this.load.audio('attack', '/assets/sounds/explosion.wav');
-    this.load.audio('win', '/assets/sounds/powerup.wav');
+    this.load.image('blueButton1', '/assets/decor/button1.png');
+    this.load.image('blueButton2', '/assets/decor/button2.png');
+    this.load.image('box', '/assets/ui/sound6.png');
+    this.load.image('checkedBox', '/assets/ui/sound3.png');
+    this.load.audio('bgMusic', '/assets/sounds/StartTheme.ogg');
 
-    this.load.image('tree1', '/assets/map/tree1.png');
-    this.load.image('tree0', '/assets/map/tree0.png');
+    this.load.image('tree2', '/assets/map/tree1.png');
+    this.load.image('tree1', '/assets/map/tree0.png');
+    this.load.image('axe', '/assets/board/Axes.png');
+    this.load.image('fight', '/assets/fight.jpg');
+    this.load.image('space', '/assets/backspace.png');
+    this.load.image('arrow', '/assets/pointers.jpg');
 
     this.load.image('court', '/assets/map/court.png');
 
-    this.load.spritesheet('player', '/assets/map/assets_dummies.png', {
+    this.load.spritesheet('player', '/assets/map/RPG_assets.png', {
       frameWidth: 16,
       frameHeight: 16,
     });
 
-    this.load.spritesheet('player0', '/assets/board/Fighter.png', {
+    this.load.spritesheet('player2', '/assets/board/Fighter.png', {
       frameWidth: 105,
       frameHeight: 100,
     });
 
-    this.load.image('Menelik', '/assets/map/alienHero.gif');
-    this.load.image('Lumumba', '/assets/map/alienHero2.jpg');
-    this.load.image('Colon', '/assets/map/colon1.png');
-    this.load.image('Colon1', '/assets/map/colon2.png');
-    this.load.image('Colon2', '/assets/map/colon3.png');
-    this.load.image('Kiranga', '/assets/map/kiranga.png');
-    this.load.image('King', '/assets/master.png');
+    this.load.image('hero1', '/assets/map/ninja.gif');
+    this.load.image('hero2', '/assets/map/alienHero2.jpg');
+    this.load.image('wizarus', '/assets/map/wizard1.png');
+    this.load.image('wizarus2', '/assets/map/wizard2.png');
+    this.load.image('wizarus3', '/assets/map/wizard3.png');
+    this.load.image('ghostus', '/assets/map/kiranga.png');
+    this.load.image('master', '/assets/mater.png');
   }
 
   ready() {

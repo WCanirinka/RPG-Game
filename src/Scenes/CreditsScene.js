@@ -2,7 +2,7 @@
 import 'phaser';
 
 import config from '../Config/config';
-import Button from '../Objects/Buttons';
+import Button from '../Objects/Button';
 
 export default class CreditsScene extends Phaser.Scene {
   constructor() {
