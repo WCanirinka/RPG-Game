@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-/* eslint-disable radix */
 
 import 'phaser';
 
@@ -13,7 +12,7 @@ export default class PreloaderScene extends Phaser.Scene {
   }
 
   preload() {
-    this.add.image(400, 200, 'logo');
+    this.add.image(400, 200, 'King');
     const progressBar = this.add.graphics();
     const progressBox = this.add.graphics();
     progressBox.fillStyle(0x22222, 0.8);
@@ -30,11 +29,32 @@ export default class PreloaderScene extends Phaser.Scene {
         fill: '#ffffff',
       },
     });
+    loadingTxt.setOrigin(0.5, 0.5);
 
+    const percentTxt = this.make.text({
+      x: width / 2,
+      y: height / 2 - 5,
+      text: '0%',
+      style: {
+        font: '18px monospace',
+        fill: '#ffffff',
+      },
+    });
+    percentTxt.setOrigin(0.5, 0.5);
+
+    const assetTxt = this.make.text({
+      x: width / 2,
+      y: height / 2 + 50,
+      text: '',
+      style: {
+        font: '18px monospace',
+        fill: '#ffffff',
+      },
+    });
     assetTxt.setOrigin(0.5, 0.5);
 
     this.load.on('progress', () => {
-      percentTxt.setText(`${parseInt(value * 100)}%`);
+      percentTxt.setText(`${parseInt(value * 100, 0)}%`);
       progressBar.clear();
       progressBar.fillStyle(0xffffff, 1);
       progressBar.fillRect(250, 280, 300 * value, 30);

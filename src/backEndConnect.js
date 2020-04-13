@@ -67,7 +67,9 @@ const connection = (() => {
     return sortingObject(answer.result);
   };
 
-  return { createGame, submitScore, getScoreBoard };
+  return {
+    createGame, submitScore, getScoreBoard,
+  };
 })();
 
 export default connection;
