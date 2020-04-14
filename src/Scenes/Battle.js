@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable import/no-mutable-exports */
 /* eslint-disable import/no-cycle */
 /* eslint-disable no-param-reassign */
@@ -5,11 +6,16 @@
 /* eslint-disable no-undef */
 
 import 'phaser';
+import HealthBar from '../Objects/healthBar';
+import liveUpdate from '../dom';
 import {
   scoreUpdate, powerAssign, enemySelect,
 } from '../helper';
 
 let score = 0;
+let life = 350;
+// eslint-disable-next-line no-unused-vars
+let bar;
 
 const Unit = new Phaser.Class({
   Extends: Phaser.GameObjects.Sprite,
@@ -31,12 +37,16 @@ const Unit = new Phaser.Class({
   attack(target) {
     if (target.living) {
       target.takeDamage(this.damage);
+      if (target instanceof PlayerCharacter) {
+        life -= this.damage;
+      }
       this.scene.events.emit(
         'Message',
         `${this.type} attacks ${target.type} for ${this.damage} damage`,
       );
     }
   },
+
   takeDamage(damage) {
     this.hp -= damage;
     if (this.hp <= 0) {
@@ -196,6 +206,7 @@ const BattleScene = new Phaser.Class({
       return;
     }
     if (this.checkEndBattle() === 'GameOver') {
+      liveUpdate();
       this.endBattle(true);
       return;
     }
@@ -238,6 +249,7 @@ const BattleScene = new Phaser.Class({
     }
 
     if (victory) {
+      life = 350;
       return 'Victory';
     }
     if (gameOver) {
@@ -421,6 +433,9 @@ const UIScene = new Phaser.Class({
   },
 
   create() {
+    setInterval(() => {
+      bar = new HealthBar(this, 10, 10, life);
+    }, 500);
     this.graphics = this.add.graphics();
     this.graphics.lineStyle(1, 0xffffff);
     this.graphics.fillStyle(0x031f4c, 1);
@@ -508,8 +523,8 @@ const UIScene = new Phaser.Class({
         this.currentMenu.moveSelectionUp();
       } else if (event.code === 'ArrowDown') {
         this.currentMenu.moveSelectionDown();
+      // eslint-disable-next-line no-empty
       } else if (event.code === 'ArrowRight' || event.code === 'Shift') {
-        this.currentMenu.confirm();
       } else if (event.code === 'Space' || event.code === 'ArrowLeft') {
         this.currentMenu.confirm();
       }

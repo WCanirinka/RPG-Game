@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 /* eslint-disable import/named */
 import 'phaser';
 import {
@@ -49,7 +50,7 @@ if (getCurrentPlayer()) {
 }
 
 const hide = () => {
-  const player = dom.getName('user-name').value;
+  const player = document.getElementById('user-name').value;
   currentPlayer(player);
   from.style.display = 'none';
   div.style.display = 'none';

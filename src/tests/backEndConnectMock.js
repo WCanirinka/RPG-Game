@@ -1,13 +1,11 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-restricted-globals */
 const fetch = require('node-fetch');
 
-const createGame = async () => {
+async function createGame() {
   const name = {
-    name: 'African Jungle',
+    name: 'Connect',
   };
   const game = JSON.stringify(name);
-  const address = 'https://us-central1-js-capstone-backend.cloudconsts.net/api/games/';
+  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
   const settings = {
     method: 'POST',
     headers: {
@@ -19,15 +17,15 @@ const createGame = async () => {
   const response = await fetch(address, settings);
   const answer = await response.json();
   return answer;
-};
+}
 
-const submitScore = async (name, score) => {
+async function submitScore(name, score) {
   const submit = {
     user: name,
     score,
   };
   const post = JSON.stringify(submit);
-  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uyTWdefGYb1d0pIVy2jN/scores/';
+  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/anqavybY7CDvVPtDNJSd/scores/';
   const settings = {
     method: 'POST',
     headers: {
@@ -38,19 +36,19 @@ const submitScore = async (name, score) => {
   };
   const response = await fetch(address, settings);
   const answer = await response.json();
-  return answer;
-};
+  return answer.result;
+}
 
-const sorting = (obj) => {
+function sorting(obj) {
   const array = [];
   for (let i = 0; i < obj.length; i += 1) {
     array.push([obj[i].score, obj[i].user]);
   }
   return Array.from(array).sort((a, b) => b[0] - a[0]);
-};
+}
 
-const getScoreBoard = async () => {
-  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uyTWdefGYb1d0pIVy2jN/scores/';
+async function getScoreBoard() {
+  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/anqavybY7CDvVPtDNJSd/scores/';
   const settings = {
     method: 'GET',
     headers: {
@@ -58,14 +56,10 @@ const getScoreBoard = async () => {
       'Content-Type': 'application/json',
     },
   };
-  try {
-    const response = await fetch(address, settings);
-    const answer = await response.json();
-    return sorting(answer.result);
-  } catch (error) {
-    return error.message;
-  }
-};
+  const response = await fetch(address, settings);
+  const answer = await response.json();
+  return sorting(answer.result);
+}
 
 export {
   submitScore, createGame, getScoreBoard,

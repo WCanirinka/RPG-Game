@@ -100,7 +100,7 @@ export default class PreloaderScene extends Phaser.Scene {
       frameHeight: 100,
     });
 
-    this.load.image('hero1', 'assets/map/ninja.gif');
+    this.load.image('hero1', 'assets/map/ninja.jpg');
     this.load.image('hero2', 'assets/map/alienHero2.jpg');
     this.load.image('wizarus', 'assets/map/wizard1.png');
     this.load.image('wizarus2', 'assets/map/wizard2.png');
