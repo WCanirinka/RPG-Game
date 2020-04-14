@@ -1,4 +1,5 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/438e5f49-910b-4b5e-b242-34192cc2d7f7/deploy-status)](https://app.netlify.com/sites/rpg-game-capstone/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ad7a78d7-b6b3-4ecc-9927-1dbbf56fc492/deploy-status)](https://app.netlify.com/sites/affectionate-babbage-827aa9/deploys)
+<br />>
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
 <br />
