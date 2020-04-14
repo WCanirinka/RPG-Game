@@ -3,7 +3,7 @@
 /* eslint-disable no-undef */
 
 import 'phaser';
-import score from './Battle';
+import { score } from './Battle';
 import { scoreTextUpdate, levelUpdate } from '../helper';
 
 let scoreText;

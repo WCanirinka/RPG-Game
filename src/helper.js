@@ -1,6 +1,6 @@
 /* eslint-disable import/no-cycle */
 /* eslint-disable no-undef */
-import score from './Scenes/Battle';
+import { score } from './Scenes/Battle';
 
 const scoreTextUpdate = (el) => {
   setInterval(() => {

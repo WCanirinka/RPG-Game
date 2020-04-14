@@ -1,8 +1,10 @@
+/* eslint-disable import/no-cycle */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-undef */
 import 'phaser';
 import config from '../Config/config';
 import Button from '../Objects/Button';
+// import Model from '../Objects/Model';
 
 export default class TitleScene extends Phaser.Scene {
   constructor() {
@@ -29,15 +31,16 @@ export default class TitleScene extends Phaser.Scene {
     this.add.text(
       450,
       480,
-      'Enemies are not visible 👻',
+      'Enemies are not visible they are hiding',
       { fontSize: '20px', fill: '#B09B1C' },
     );
     this.add.text(
       450,
       530,
-      'Use the force to find them🙏',
+      'Use brute force to see them',
       { fontSize: '20px', fill: '#B09B1C' },
     );
+
     this.gameButton = new Button(
       this,
       config.width / 2,

@@ -3,7 +3,7 @@ import 'phaser';
 import {
   currentPlayer, getCurrentPlayer, currentScore, getCurrentScore,
 } from './localStorage';
-import score from './Scenes/Battle';
+import { score } from './Scenes/Battle';
 import { submitScore, getScoreBoard } from './backEndConnect';
 
 const dom = (() => {
@@ -21,8 +21,8 @@ const dom = (() => {
 })();
 
 const boardList = async () => {
-  let list = `<h1 class="text-c">Leader Board</h1>
-  <h4><span>Place</span><span>Score</span><span>Name</span></h4>`;
+  let list = `<h1 class="header">LeaderBoard</h1>
+  <h4><span>Number</span><span>Score</span><span>Name</span></h4>`;
   const leaderBoard = await getScoreBoard();
   leaderBoard.forEach((element) => {
     list += `<h4><span>${leaderBoard.indexOf(element) + 1}</span><span>${
@@ -34,13 +34,13 @@ const boardList = async () => {
 
 const render = async () => {
   const data = await boardList();
-  dom.getElement('learderboard').innerHTML = data;
+  dom.getElement('leaderboard').innerHTML = data;
 };
 
 render();
 
-const submit = document.getElementById('play');
-const from = document.getElementById('user-name');
+const submit = document.getElementById('start');
+const from = document.getElementById('username');
 
 if (getCurrentPlayer()) {
   from.style.display = 'none';

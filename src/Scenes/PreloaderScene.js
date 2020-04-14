@@ -12,7 +12,7 @@ export default class PreloaderScene extends Phaser.Scene {
   }
 
   preload() {
-    this.add.image(400, 200, 'King');
+    this.add.image(400, 200, 'master');
     const progressBar = this.add.graphics();
     const progressBox = this.add.graphics();
     progressBox.fillStyle(0x22222, 0.8);
@@ -53,7 +53,7 @@ export default class PreloaderScene extends Phaser.Scene {
     });
     assetTxt.setOrigin(0.5, 0.5);
 
-    this.load.on('progress', () => {
+    this.load.on('progress', (value) => {
       percentTxt.setText(`${parseInt(value * 100, 0)}%`);
       progressBar.clear();
       progressBar.fillStyle(0xffffff, 1);
@@ -75,38 +75,38 @@ export default class PreloaderScene extends Phaser.Scene {
 
     this.timeEvent = this.time.delayedCall(5000, this.ready, [], this);
 
-    this.load.image('blueButton1', '/assets/decor/button1.png');
-    this.load.image('blueButton2', '/assets/decor/button2.png');
-    this.load.image('box', '/assets/ui/sound6.png');
-    this.load.image('checkedBox', '/assets/ui/sound3.png');
-    this.load.audio('bgMusic', '/assets/sounds/StartTheme.ogg');
+    this.load.image('blueButton1', 'assets/decor/button1.png');
+    this.load.image('blueButton2', 'assets/decor/button2.png');
+    this.load.image('box', 'assets/ui/sound6.png');
+    this.load.image('checkedBox', 'assets/ui/sound3.png');
+    this.load.audio('bgMusic', ['assets/sounds/StartTheme.mp3']);
 
-    this.load.image('tree2', '/assets/map/tree1.png');
-    this.load.image('tree1', '/assets/map/tree0.png');
-    this.load.image('axe', '/assets/board/Axes.png');
-    this.load.image('fight', '/assets/fight.jpg');
-    this.load.image('space', '/assets/backspace.png');
-    this.load.image('arrow', '/assets/pointers.jpg');
+    this.load.image('tree2', 'assets/map/tree1.png');
+    this.load.image('tree1', 'assets/map/tree0.png');
+    this.load.image('axe', 'assets/board/Axes.png');
+    this.load.image('fight', 'assets/fight.jpg');
+    this.load.image('space', 'assets/backspace.png');
+    this.load.image('arrow', 'assets/pointers.jpg');
 
-    this.load.image('court', '/assets/map/court.png');
+    this.load.image('court', 'assets/map/court.png');
 
-    this.load.spritesheet('player', '/assets/map/RPG_assets.png', {
+    this.load.spritesheet('player', 'assets/map/RPG_assets.png', {
       frameWidth: 16,
       frameHeight: 16,
     });
 
-    this.load.spritesheet('player2', '/assets/board/Fighter.png', {
+    this.load.spritesheet('player2', 'assets/board/Fighter.png', {
       frameWidth: 105,
       frameHeight: 100,
     });
 
-    this.load.image('hero1', '/assets/map/ninja.gif');
-    this.load.image('hero2', '/assets/map/alienHero2.jpg');
-    this.load.image('wizarus', '/assets/map/wizard1.png');
-    this.load.image('wizarus2', '/assets/map/wizard2.png');
-    this.load.image('wizarus3', '/assets/map/wizard3.png');
-    this.load.image('ghostus', '/assets/map/kiranga.png');
-    this.load.image('master', '/assets/mater.png');
+    this.load.image('hero1', 'assets/map/ninja.gif');
+    this.load.image('hero2', 'assets/map/alienHero2.jpg');
+    this.load.image('wizarus', 'assets/map/wizard1.png');
+    this.load.image('wizarus2', 'assets/map/wizard2.png');
+    this.load.image('wizarus3', 'assets/map/wizard3.png');
+    this.load.image('ghostus', 'assets/map/kiranga.png');
+    this.load.image('master', 'assets/mater.png');
   }
 
   ready() {

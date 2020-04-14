@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 
 const createGame = async () => {
   const name = {
-    name: 'Forest-Defender',
+    name: 'African Jungle',
   };
   const game = JSON.stringify(name);
   const address = 'https://us-central1-js-capstone-backend.cloudconsts.net/api/games/';
@@ -27,7 +27,7 @@ const submitScore = async (name, score) => {
     score,
   };
   const post = JSON.stringify(submit);
-  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/XHg3mRHc25dQtUcRlLYE/scores/';
+  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uyTWdefGYb1d0pIVy2jN/scores/';
   const settings = {
     method: 'POST',
     headers: {
@@ -50,7 +50,7 @@ const sorting = (obj) => {
 };
 
 const getScoreBoard = async () => {
-  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/XHg3mRHc25dQtUcRlLYE/scores/';
+  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uyTWdefGYb1d0pIVy2jN/scores/';
   const settings = {
     method: 'GET',
     headers: {

@@ -1,10 +1,11 @@
+/* eslint-disable import/no-cycle */
 /* eslint-disable no-undef */
 import 'phaser';
 
 import config from '../Config/config';
 import Button from '../Objects/Button';
 import getCurrentScore from '../localStorage';
-import score from './Battle';
+import { score } from './Battle';
 
 
 export default class GameOver extends Phaser.Scene {
@@ -18,7 +19,7 @@ export default class GameOver extends Phaser.Scene {
     this.madeByText = this.add.text(
       0,
       0,
-      'Forest Clash',
+      'African Jungle',
       { fontSize: '26px', fill: '#B09B1C' },
     );
     this.scoreT = this.add.text(
