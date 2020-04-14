@@ -49,7 +49,7 @@ on the left, of the screen, you can see the LeaderBoard and when the game end if
 
 ### How to play
 The player will have two turns before the enemies get their own.
-Use ![screenshot](assets/pointers.jpg) to select the character you want to use and the enemy you want to attack, and press ![screenshot](build/assets/backspace.png) to attack the selected enemy.
+Use ![screenshot](build/assets/pointers.jpg) to select the character you want to use and the enemy you want to attack, and press ![screenshot](build/assets/backspace.png) to attack the selected enemy.
 
 
 You can play the game online clicking [here](https://affectionate-babbage-827aa9.netlify.com) or locally following these steps:
