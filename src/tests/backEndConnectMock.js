@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-restricted-globals */
 const fetch = require('node-fetch');
 
 async function createGame() {
