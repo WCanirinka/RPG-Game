@@ -39,19 +39,19 @@ Repository: https://github.com/WCanirinka/RPG-Game
 
 ## The game
 
-this is a turn-based game where you will have three characters, the game start with the first character (prospector) , you will be using him to find the enemies **spolier alert!!! enemies are not visible use brute force to see them** when you find the enemies you will have your two other characters **Herus** and **ninja** to help you fighting the enemies. select the character you want to use with **keyboard arrows** and attack the enemy with **space**. the game has three levels and as you
+It is a turn-based game where you will have three characters, the game start with the first character (prospector) , you will be using him to find the enemies **spolier alert!!! enemies are not visible use brute force to see them** when you find the enemies you will have your two other characters **Herus** and **ninja** to help you fighting the enemies. select the character you want to use with **keyboard arrows** and attack the enemy with **space**. the game has three levels and as you
 progress you get stronger enemies and higher score.
 ###### 0- 50 level 1
 ###### 50- 200 level 2
 ###### 200- ++ level 3
-on the left, of the screen, you can see the leader board and when the game end if you broke your record, it will be automatically updated on the leader board
+on the left, of the screen, you can see the LeaderBoard and when the game end if you broke your record, it will be automatically updated on the LeaderBoard
 
 ### How to play
-As explained in the previous section this is a turn basd game you will have two turns before the enemies get their own.
-Use ![screenshot](assets/arrow.jpg) to select the character you want to use and the enemy you want to attack, and press ![screenshot](assets/space-key.png) to attack the selected enemy.
+The player will have two turns before the enemies get their own.
+Use ![screenshot](assets/pointers.jpg) to select the character you want to use and the enemy you want to attack, and press ![screenshot](assets/backspace.png) to attack the selected enemy.
 
 
-You can play the game online clicking [here](https://cranky-lovelace-92c884.netlify.com/) or locally following these steps:
+You can play the game online clicking [here]() or locally following these steps:
 
 ##### clone the repo by typing 
 ~~~
@@ -74,12 +74,12 @@ npm install
 npm start
 ~~~
 
-and have fun playing while you are getting a live update of your record on the LeaderBoard each time you break it
+You will have a live update of your score as you play. Enjoy the game
 
 
 ### Design
 
-The Game wills start with your first character the prospector you will use him to find the hidden enemies when you find them you will be taken to the other screen which is the battle screen.
+The Game will start with your first character the prospector you will use him to find the hidden enemies when you find them you will be taken to the other screen which is the battle screen.
 when you  are in the battle screen you will see your two heroes characters appear on the right and the enemies on the left of the screen, use the arrow keys on your keyboard to select your hero and press space to attack after you've attacked the enemies will automatically attack you, you can keep track of your remaining hp by looking at the health bar on the top left of your screen.if you won the battle you will be taken back to the main screen so that you can look for more enemies if you lost you will be taken to the game over screen 
 
 
@@ -88,39 +88,40 @@ when you  are in the battle screen you will see your two heroes characters appea
 ##### Prospector
 use him to seek enemies in the forest
 
-##### Ninja ![screenshot](assets/ninja.png)
+##### Ninja ![screenshot](assets/map/ninja.jpg)
 he is your most important asset for making damage to the enemies he has **150 damage*** and **80 Hp**
 
-##### Herus ![screenshot](assets/super.png)
+##### Herus ![screenshot](assets/map/alienHero2.jpg)
 You cant count on him bear attacks from the enemies he has **50 damage** and **200 Hp**
 
 
 
 #### Enemies
 
-##### wizarus form 1 ![screenshot](assets/wizard1.png)
+##### wizarus 1 ![screenshot](assets/map/wizard1.png)
 
 You will see him in level one(he can take different forms)  he has  **80 damage** and **80 Hp**
 
-##### wizarus form 2 ![screenshot](assets/wizard2.png)
+##### wizarus 2 ![screenshot](assets/map/wizard2.png)
+
 You will see him in level 1  **90 damage** and **90 Hp**
 
-##### wizarus form 3 ![screenshot](assets/wizard3.png)
+##### wizarus 3 ![screenshot](assets/map/wizard3.png)
 
 You will see him in level 2  **110 damage** and **100 Hp**
 
 ##### ghostus ![screenshot](assets/ghost.png)
 
-He is more powerfull than wizarus You will see him in level 3  **120 damage** and **150 Hp**
+The most powerful all the wizarus, he joins in level 3  **120 damage** and **150 Hp**
 
 ##### Master ![screenshot](assets/mater.png)
 
-this is the enemy you want to defeat he is the MVP of opponents you see him in level 3  **150 damage** and **200 Hp**
+he is the most valuable enemy that needs to be defeated since he is very strong **150 damage** and **200 Hp**
 
 #### Scenes
 
 ##### TItle scene
-![screenshot](assets/main.png)
+![screenshot](assets/screenshots/main.png)
 
 ##### credit scene
 ![screenshot](assets/credit.png)
