@@ -6,7 +6,7 @@
 
 # JavaScript Capstone Project: Build an RPG game
 
-# AFRICAN JUNGLE ![screenshot](../assets/board/Axes.png)
+# AFRICAN JUNGLE ![screenshot](build/assets/board/Axes.png)
 
 This is Microverse's final project for the Javascript section.
 
@@ -49,7 +49,7 @@ on the left, of the screen, you can see the LeaderBoard and when the game end if
 
 ### How to play
 The player will have two turns before the enemies get their own.
-Use ![screenshot](assets/pointers.jpg) to select the character you want to use and the enemy you want to attack, and press ![screenshot](../assets/backspace.png) to attack the selected enemy.
+Use ![screenshot](assets/pointers.jpg) to select the character you want to use and the enemy you want to attack, and press ![screenshot](build/assets/backspace.png) to attack the selected enemy.
 
 
 You can play the game online clicking [here](https://affectionate-babbage-827aa9.netlify.com) or locally following these steps:
@@ -89,52 +89,52 @@ when you  are in the battle screen you will see your two heroes characters appea
 ##### Prospector
 use him to seek enemies in the forest
 
-##### Ninja ![screenshot](../assets/map/ninja.jpg)
+##### Ninja ![screenshot](build/assets/map/ninja.jpg)
 he is your most important asset for making damage to the enemies he has **150 damage*** and **80 Hp**
 
-##### Herus ![screenshot](../assets/map/alienHero2.jpg)
+##### Herus ![screenshot](build/assets/map/alienHero2.jpg)
 You cant count on him bear attacks from the enemies he has **50 damage** and **200 Hp**
 
 
 
 #### Enemies
 
-##### wizarus 1 ![screenshot](../assets/map/wizard1.png)
+##### wizarus 1 ![screenshot](build/assets/map/wizard1.png)
 
 You will see him in level one(he can take different forms)  he has  **80 damage** and **80 Hp**
 
-##### wizarus 2 ![screenshot](../assets/map/wizard2.png)
+##### wizarus 2 ![screenshot](build/assets/map/wizard2.png)
 
 You will see him in level 1  **90 damage** and **90 Hp**
 
-##### wizarus 3 ![screenshot](../assets/map/wizard3.png)
+##### wizarus 3 ![screenshot](build/assets/map/wizard3.png)
 
 You will see him in level 2  **110 damage** and **100 Hp**
 
-##### ghostus ![screenshot](../assets/ghost.png)
+##### ghostus ![screenshot](build/assets/ghost.png)
 
 The most powerful all the wizarus, he joins in level 3  **120 damage** and **150 Hp**
 
-##### Master ![screenshot](../assets/mater.png)
+##### Master ![screenshot](build/assets/mater.png)
 
 he is the most valuable enemy that needs to be defeated since he is very strong **150 damage** and **200 Hp**
 
 #### Scenes
 
 ##### TItle scene
-![screenshot](../assets/screenshots/main.png)
+![screenshot](build/assets/screenshots/main.png)
 
 ##### credit scene
-![screenshot](../assets/screenshots/credit.png)
+![screenshot](build/assets/screenshots/credit.png)
 
 ##### option scene
-![screenshot](../assets/screenshots/options.png)
+![screenshot](build/assets/screenshots/options.png)
 
 ##### world scene
-![screenshot](../assets/screenshots/world.png)
+![screenshot](build/assets/screenshots/world.png)
 
 ##### battle scene
-![screenshot](../assets/screenshots/battle.png)
+![screenshot](build/assets/screenshots/battle.png)
 
 <!-- ##### Game Over
 ![screenshot](assets/screenshots/ over.png) -->
