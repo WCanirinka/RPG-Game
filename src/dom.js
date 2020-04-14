@@ -36,7 +36,8 @@ const boardList = async () => {
 
 const render = async () => {
   const data = await boardList();
-  dom.getElement('leaderboard').innerHTML = data;
+  document.getElementById('leaderboard').innerHTML = data;
+  // dom.getElement('leaderboard').innerHTML = data;
 };
 
 render();
