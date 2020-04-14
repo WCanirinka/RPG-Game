@@ -4,7 +4,7 @@ import 'phaser';
 
 import config from '../Config/config';
 import Button from '../Objects/Button';
-import getCurrentScore from '../localStorage';
+import { getCurrentScore } from '../localStorage';
 import { score } from './Battle';
 
 

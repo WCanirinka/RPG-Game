@@ -1,4 +1,5 @@
 body {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,17 +42,18 @@ body {
 
 #username {
   background-color: rgba(0, 0, 0, 0.699);
-  position: center;
-  background-color: #fff;
-  width: 300px;
-  height: 40px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.349);
+  width: 100vw;
+  height: 100vh;
   border: 1px solid #000000;
   border-radius: 4px;
+  z-index: 100;
 }
 
 #username form {
-  margin-top: 0;
-  margin-left: 0;
+  margin-top: 40vh;
+  margin-left: 35vw;
 }
 
 .header {

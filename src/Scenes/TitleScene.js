@@ -4,7 +4,6 @@
 import 'phaser';
 import config from '../Config/config';
 import Button from '../Objects/Button';
-// import Model from '../Objects/Model';
 
 export default class TitleScene extends Phaser.Scene {
   constructor() {
@@ -31,7 +30,7 @@ export default class TitleScene extends Phaser.Scene {
     this.add.text(
       450,
       480,
-      'Enemies are not visible they are hiding',
+      'Enemies are not visible ',
       { fontSize: '20px', fill: '#B09B1C' },
     );
     this.add.text(

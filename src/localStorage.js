@@ -1,25 +1,21 @@
 const currentPlayer = (params) => {
-  const current = JSON.stringify(params);
-  window.localStorage.setItem('current', current);
-  return current;
+  const currentP = JSON.stringify(params);
+  window.localStorage.setItem('currentP', currentP);
+  return (currentP);
 };
-
 const getCurrentPlayer = () => {
-  const current = localStorage.getItem('current');
-  return JSON.parse(current);
+  const currentP = localStorage.getItem('currentP');
+  return JSON.parse(currentP);
 };
-
 const currentScore = (params = 0) => {
-  const current = JSON.stringify(params);
-  window.localStorage.setItem('currentScore', current);
-  return current;
+  const currentP = JSON.stringify(params);
+  window.localStorage.setItem('currentS', currentP);
+  return (currentP);
 };
-
 const getCurrentScore = () => {
-  const current = localStorage.getItem('currentScore');
-  return JSON.parse(current);
+  const currentP = localStorage.getItem('currentS');
+  return JSON.parse(currentP);
 };
-
 export {
   currentPlayer, getCurrentPlayer, currentScore, getCurrentScore,
 };

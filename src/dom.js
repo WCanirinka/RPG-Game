@@ -40,15 +40,19 @@ const render = async () => {
 render();
 
 const submit = document.getElementById('start');
-const from = document.getElementById('username');
+const from = document.getElementById('user-name');
+const div = document.getElementById('username');
 
 if (getCurrentPlayer()) {
   from.style.display = 'none';
+  div.style.display = 'none';
 }
+
 const hide = () => {
-  const player = dom.getName('name');
+  const player = dom.getName('user-name').value;
   currentPlayer(player);
   from.style.display = 'none';
+  div.style.display = 'none';
 };
 submit.addEventListener('click', hide);
 

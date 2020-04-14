@@ -37,7 +37,6 @@
     "jest": "^25.3.0",
     "jest-canvas-mock": "^2.2.0",
     "node-pre-gyp": "^0.14.0",
-    "raw-loader": "^4.0.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
@@ -48,6 +47,7 @@
     "babel-polyfill": "^6.26.0",
     "http-server": "^0.12.1",
     "node-fetch": "^2.6.0",
-    "phaser": "^3.22.0"
+    "phaser": "^3.22.0",
+    "raw-loader": "^4.0.0"
   }
 }
