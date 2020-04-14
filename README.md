@@ -7,9 +7,9 @@
 
 # FOREST-CLASH ![screenshot](assets/Axes.png)
 
-This is the Microverse's final project for the Javascript  course.
+This is Microverse's final project for the Javascript section.
 
-In this project i implemented a RPG game using [Phaser 3](http://phaser.io/tutorials), an open-source framework for Canvas and WebGL powered browser games.
+In this project I implemented an RPG game using [Phaser 3](http://phaser.io/tutorials), an open-source framework for Canvas and WebGL powered browser games.
 
 
 ## Table of Contents
@@ -34,7 +34,7 @@ The assignment can be seen [Here](https://www.notion.so/RPG-game-f94a617841e240a
 
 Link to a [live-version](https://cranky-lovelace-92c884.netlify.com/).
 
-Repository: https://github.com/Tresor11/Phaser-RPG-Game
+Repository: https://github.com/WCanirinka/RPG-Game
 
 
 ## The game
@@ -55,12 +55,12 @@ You can play the game online clicking [here](https://cranky-lovelace-92c884.netl
 
 ##### clone the repo by typing 
 ~~~
-git clone https://github.com/Tresor11/Phaser-RPG-Game
+git clone https://github.com/WCanirinka/RPG-Game
 ~~~
 
 ##### navigate to the folder by typing
 ~~~
-cd Phaser-RPG-Game
+cd RPG-Game
 ~~~
 ##### get the Dependencies by typing
 
@@ -158,16 +158,16 @@ https://www.loom.com/
 
 ## contact
 
-👤 **Tresor**
+👤 **Wilfried Canirinka**
 
-- Github: [@ampaire](https://github.com/Tresor11)
-- Twitter: [@AmpaPhem](https://twitter.com/Tbireke)
+- Github: [@WCanirinka]https://github.com/WCanirinka)
+- Twitter: [@WCanirinka](https://twitter.com/WCanirinka)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Tresor11/Phaser-RPG-Game/issues).
+Feel free to check the [issues page](https://github.com/WCanirinka/RPG-Game/issues).
 
 ## Show your support
 
@@ -176,6 +176,6 @@ Give a ⭐️ if you like this project!
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/Contributors-2-%2300ff00
-[contributors-url]: https://github.com/WCanirinka/Weather-App-JS/graphs/contributors
+[contributors-url]: https://github.com/WCanirinka/RPG-Game/graphs/contributors
 [issues-shield]: https://img.shields.io/badge/issues-0-%2300ff00
-[issues-url]: https://github.com/WCanirinka/Weather-App-JS/issues/
+[issues-url]: https://github.com/WCanirinka/RPG-Game/issues/

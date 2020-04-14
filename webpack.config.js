@@ -1,4 +1,4 @@
-
+/* eslint-disable import/no-unresolved */
 const webpack = require('webpack');
 const path = require('path');
 

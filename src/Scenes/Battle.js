@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable no-use-before-define */
 /* eslint-disable import/no-mutable-exports */
 /* eslint-disable import/no-cycle */

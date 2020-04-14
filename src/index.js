@@ -1,4 +1,6 @@
 /* eslint-disable no-undef */
+/* eslint-disable import/no-unresolved */
+
 import 'phaser';
 import config from './Config/config';
 import BootScene from './Scenes/BootScene';

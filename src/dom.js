@@ -1,4 +1,5 @@
 /* eslint-disable import/no-cycle */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable import/named */
 import 'phaser';
 import {
@@ -8,7 +9,7 @@ import { score } from './Scenes/Battle';
 import { submitScore, getScoreBoard } from './backEndConnect';
 
 const dom = (() => {
-  const getElement = (id) => document.getElementById(id);
+  const getElement = (id) => { document.getElementById(id); };
 
   const getName = (id) => {
     const name = getElement(id).value;

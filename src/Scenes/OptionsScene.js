@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+/* eslint-disable import/no-unresolved */
 import 'phaser';
 import Button from '../Objects/Button';
 

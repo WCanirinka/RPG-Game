@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable no-restricted-globals */
 const fetch = require('node-fetch');
 

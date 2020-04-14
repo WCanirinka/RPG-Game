@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable import/no-cycle */
 /* eslint-disable no-undef */
 import 'phaser';

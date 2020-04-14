@@ -1,4 +1,5 @@
 /* eslint-disable import/no-cycle */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-undef */
 import 'phaser';
