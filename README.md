@@ -5,7 +5,7 @@
 
 # JavaScript Capstone Project: Build an RPG game
 
-# FOREST-CLASH ![screenshot](assets/Axes.png)
+# AFRICAN JUNGLE ![screenshot](assets/board/Axes.png)
 
 This is Microverse's final project for the Javascript section.
 
@@ -28,18 +28,18 @@ In this project I implemented an RPG game using [Phaser 3](http://phaser.io/tuto
 
 ## About
 
-This project's objective was to build a platform game similar [gamedevacademy](https://gamedevacademy.org/how-to-create-a-turn-based-rpg-game-in-phaser-3-part-1/).The main idea is from the tutorial but I developed my own RPG with different levels.
+This project's objective was to build a platform game similar [GameDev Academy](https://gamedevacademy.org/how-to-create-a-turn-based-rpg-game-in-phaser-3-part-1/).The main objective was to use the tutorial to point me in the right direction to build a platform game with different levels.
 
-The assignment can be seen [Here](https://www.notion.so/RPG-game-f94a617841e240a293c0b6928beebe89).
+The link to the assignment can be found [Here](https://www.notion.so/RPG-game-f94a617841e240a293c0b6928beebe89).
 
-Link to a [live-version](https://cranky-lovelace-92c884.netlify.com/).
+Link to a [live-version]().
 
 Repository: https://github.com/WCanirinka/RPG-Game
 
 
 ## The game
 
-this is a turn-based game where you will have three characters, the game start with the first character (prospector) , you will be using him to find the enemies **spolier alert!!! they are hiding so you can't see them. move around and check every corner** when you find the enemies you will have your two other characters **Herus** and **ninja** to help you fighting the enemies. select the character you want to use with **keyboard arrows** and attack the enemy with **space**. the game has three levels and as you
+this is a turn-based game where you will have three characters, the game start with the first character (prospector) , you will be using him to find the enemies **spolier alert!!! enemies are not visible use brute force to see them** when you find the enemies you will have your two other characters **Herus** and **ninja** to help you fighting the enemies. select the character you want to use with **keyboard arrows** and attack the enemy with **space**. the game has three levels and as you
 progress you get stronger enemies and higher score.
 ###### 0- 50 level 1
 ###### 50- 200 level 2
@@ -71,10 +71,10 @@ npm install
 ##### bundle the files and start the server by typing
 
 ~~~
-npm run start
+npm start
 ~~~
 
-and have fun playing while you are getting a live update of your record on the leader board each time you break it
+and have fun playing while you are getting a live update of your record on the LeaderBoard each time you break it
 
 
 ### Design
