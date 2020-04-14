@@ -32,7 +32,7 @@ This project's objective was to build a platform game similar [GameDev Academy](
 
 The link to the assignment can be found [Here](https://www.notion.so/RPG-game-f94a617841e240a293c0b6928beebe89).
 
-Link to a [live-version]().
+Link to a [live-version](https://affectionate-babbage-827aa9.netlify.com).
 
 Repository: https://github.com/WCanirinka/RPG-Game
 
@@ -51,7 +51,7 @@ The player will have two turns before the enemies get their own.
 Use ![screenshot](assets/pointers.jpg) to select the character you want to use and the enemy you want to attack, and press ![screenshot](assets/backspace.png) to attack the selected enemy.
 
 
-You can play the game online clicking [here]() or locally following these steps:
+You can play the game online clicking [here](https://affectionate-babbage-827aa9.netlify.com) or locally following these steps:
 
 ##### clone the repo by typing 
 ~~~
@@ -124,19 +124,19 @@ he is the most valuable enemy that needs to be defeated since he is very strong 
 ![screenshot](assets/screenshots/main.png)
 
 ##### credit scene
-![screenshot](assets/credit.png)
+![screenshot](assets/screenshots/credit.png)
 
 ##### option scene
-![screenshot](assets/option.png)
+![screenshot](assets/screenshots/options.png)
 
 ##### world scene
-![screenshot](assets/world.png)
+![screenshot](assets/screenshots/world.png)
 
 ##### battle scene
-![screenshot](assets/battle.png)
+![screenshot](assets/screenshots/battle.png)
 
-##### Game Over
-![screenshot](assets/over.png)
+<!-- ##### Game Over
+![screenshot](assets/screenshots/ over.png) -->
 
 ## Technologies used
 
@@ -152,10 +152,10 @@ he is the most valuable enemy that needs to be defeated since he is very strong 
 * [Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) for the leaderboard
 
 
-## Video presentation
+<!-- ## Video presentation
 
 
-https://www.loom.com/
+https://www.loom.com/ -->
 
 ## contact
 
