@@ -8,20 +8,6 @@ import {
 import { score } from './Scenes/Battle';
 import { submitScore, getScoreBoard } from './backEndConnect';
 
-const dom = (() => {
-  const getElement = (id) => { document.getElementById(id); };
-
-  const getName = (id) => {
-    const name = getElement(id).value;
-    return name;
-  };
-
-  return {
-    getElement,
-    getName,
-  };
-})();
-
 const boardList = async () => {
   let list = `<h1 class="header">LeaderBoard</h1>
   <h4><span>Number</span><span>Score</span><span>Name</span></h4>`;
