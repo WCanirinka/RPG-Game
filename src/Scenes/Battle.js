@@ -1,20 +1,17 @@
-/* eslint-disable import/no-unresolved */
 /* eslint-disable no-use-before-define */
-/* eslint-disable import/no-mutable-exports */
-/* eslint-disable import/no-cycle */
-/* eslint-disable no-param-reassign */
 /* eslint-disable prefer-destructuring */
-/* eslint-disable no-undef */
 
-import 'phaser';
+import Phaser from 'phaser';
 import HealthBar from '../Objects/healthBar';
 import liveUpdate from '../dom';
 import {
   scoreUpdate, powerAssign, enemySelect,
 } from '../helper';
 
+// eslint-disable-next-line import/no-mutable-exports
 let score = 0;
 let life = 350;
+
 // eslint-disable-next-line no-unused-vars
 let bar;
 
@@ -318,8 +315,7 @@ const MenuItem = new Phaser.Class({
 const Menu = new Phaser.Class({
   Extends: Phaser.GameObjects.Container,
 
-  // eslint-disable-next-line no-unused-vars
-  initialize: function Menu(x, y, scene, heroes) {
+  initialize: function Menu(x, y, scene) {
     Phaser.GameObjects.Container.call(this, scene, x, y);
     this.menuItems = [];
     this.menuItemIndex = 0;
@@ -357,6 +353,7 @@ const Menu = new Phaser.Class({
   },
 
   select(index) {
+    // eslint-disable-next-line no-param-reassign
     if (!index) index = 0;
     this.menuItems[this.menuItemIndex].deselect();
     this.menuItemIndex = index;

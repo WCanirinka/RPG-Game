@@ -1,14 +1,12 @@
-/* eslint-disable no-undef */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable no-restricted-globals */
 const fetch = require('node-fetch');
+
+const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
 const createGame = async () => {
   const name = {
     name: 'African Jungle',
   };
   const game = JSON.stringify(name);
-  const address = 'https://us-central1-js-capstone-backend.cloudconsts.net/api/games/';
   const settings = {
     method: 'POST',
     headers: {
@@ -17,7 +15,7 @@ const createGame = async () => {
     },
     body: game,
   };
-  const response = await fetch(address, settings);
+  const response = await fetch(`${address}`, settings);
   const answer = await response.json();
   return answer;
 };
@@ -28,7 +26,6 @@ const submitScore = async (name, score) => {
     score,
   };
   const post = JSON.stringify(submit);
-  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uyTWdefGYb1d0pIVy2jN/scores/';
   const settings = {
     method: 'POST',
     headers: {
@@ -37,7 +34,7 @@ const submitScore = async (name, score) => {
     },
     body: post,
   };
-  const response = await fetch(address, settings);
+  const response = await fetch(`${address}uyTWdefGYb1d0pIVy2jN/scores/`, settings);
   const answer = await response.json();
   return answer;
 };
@@ -51,7 +48,6 @@ const sorting = (obj) => {
 };
 
 const getScoreBoard = async () => {
-  const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uyTWdefGYb1d0pIVy2jN/scores/';
   const settings = {
     method: 'GET',
     headers: {
@@ -60,7 +56,7 @@ const getScoreBoard = async () => {
     },
   };
   try {
-    const response = await fetch(address, settings);
+    const response = await fetch(`${address}uyTWdefGYb1d0pIVy2jN/scores/`, settings);
     const answer = await response.json();
     return sorting(answer.result);
   } catch (error) {

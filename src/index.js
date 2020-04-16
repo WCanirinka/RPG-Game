@@ -1,7 +1,4 @@
-/* eslint-disable no-undef */
-/* eslint-disable import/no-unresolved */
-
-import 'phaser';
+import Phaser from 'phaser';
 import config from './Config/config';
 import BootScene from './Scenes/BootScene';
 import PreloaderScene from './Scenes/PreloaderScene';
@@ -13,7 +10,6 @@ import CreditsScene from './Scenes/CreditsScene';
 import WorldScene from './Scenes/WorldScene';
 import { BattleScene, UIScene } from './Scenes/Battle';
 import liveUpdate from './dom';
-// import { submitScore, getScoreBoard, createGame } from './backEndConnect';
 
 require('babel-core/register');
 require('babel-polyfill');

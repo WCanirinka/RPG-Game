@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { submitScore, getScoreBoard, createGame } from './backEndConnectMock';
+import { submitScore, getScoreBoard, createGame } from '../backEndConnect';
 
 describe('submit a score if input are valid', () => {
   test('submit score to the Api if the input are valid', () => submitScore('Wilfried', 30).then((data) => {

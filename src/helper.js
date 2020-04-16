@@ -1,6 +1,7 @@
-/* eslint-disable import/no-cycle */
-/* eslint-disable no-undef */
-import { score } from './Scenes/Battle';
+
+import Phaser from 'phaser';
+
+const score = require('./Scenes/Battle');
 
 const scoreTextUpdate = (el) => {
   setInterval(() => {

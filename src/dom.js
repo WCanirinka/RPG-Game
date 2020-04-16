@@ -1,12 +1,9 @@
-/* eslint-disable import/no-cycle */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/named */
-import 'phaser';
 import {
   currentPlayer, getCurrentPlayer, currentScore, getCurrentScore,
 } from './localStorage';
-import { score } from './Scenes/Battle';
 import { submitScore, getScoreBoard } from './backEndConnect';
+
+const score = require('./Scenes/Battle');
 
 const boardList = async () => {
   let list = `<h1 class="header">LeaderBoard</h1>
@@ -23,7 +20,6 @@ const boardList = async () => {
 const render = async () => {
   const data = await boardList();
   document.getElementById('leaderboard').innerHTML = data;
-  // dom.getElement('leaderboard').innerHTML = data;
 };
 
 render();

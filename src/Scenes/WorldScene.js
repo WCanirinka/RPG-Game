@@ -1,11 +1,9 @@
 /* eslint-disable no-param-reassign */
-/* eslint-disable import/no-unresolved */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 
-import 'phaser';
-import { score } from './Battle';
+import Phaser from 'phaser';
 import { scoreTextUpdate, levelUpdate } from '../helper';
+
+const score = require('./Battle');
 
 let scoreText;
 let levelText;
@@ -125,7 +123,7 @@ class WorldScene extends Phaser.Scene {
     this.scene.switch('BattleScene');
   }
 
-  update(time, delta) {
+  update() {
     this.player.body.setVelocity(0);
 
 
