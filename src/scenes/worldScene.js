@@ -2,9 +2,9 @@
 /* eslint-disable import/no-unresolved */
 
 import Phaser from 'phaser';
-import { scoreTextUpdate, levelUpdate } from '../helper';
+import { scoreTextUpdate, levelUpdate } from '../helpers/helper';
 
-const score = require('./Battle');
+const score = require('./battle');
 
 let scoreText;
 let levelText;

@@ -1,12 +1,11 @@
-/* eslint-disable import/no-cycle */
 /* eslint-disable import/no-unresolved */
 import Phaser from 'phaser';
 
-import config from '../Config/config';
-import Button from '../Objects/Button';
+import config from '../config/config';
+import Button from '../helpers/button';
 import { getCurrentScore } from '../localStorage';
-import { score } from './Battle';
 
+const score = require('./battle');
 
 export default class GameOver extends Phaser.Scene {
   constructor() {

@@ -1,8 +1,8 @@
 /* eslint-disable import/no-unresolved */
 import Phaser from 'phaser';
 
-import config from '../Config/config';
-import Button from '../Objects/Button';
+import config from '../config/config';
+import Button from '../helpers/button';
 
 export default class CreditsScene extends Phaser.Scene {
   constructor() {

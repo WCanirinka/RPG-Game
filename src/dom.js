@@ -3,7 +3,7 @@ import {
 } from './localStorage';
 import { submitScore, getScoreBoard } from './backEndConnect';
 
-const score = require('./Scenes/Battle');
+const score = require('./scenes/battle');
 
 const boardList = async () => {
   let list = `<h1 class="header">LeaderBoard</h1>

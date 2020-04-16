@@ -1,15 +1,15 @@
 /* eslint-disable import/no-unresolved */
 import Phaser from 'phaser';
-import config from './Config/config';
-import BootScene from './Scenes/BootScene';
-import PreloaderScene from './Scenes/PreloaderScene';
-import Model from './Objects/Model';
-import TitleScene from './Scenes/TitleScene';
-import GameOver from './Scenes/GameOver';
-import OptionsScene from './Scenes/OptionsScene';
-import CreditsScene from './Scenes/CreditsScene';
-import WorldScene from './Scenes/WorldScene';
-import { BattleScene, UIScene } from './Scenes/Battle';
+import config from './config/config';
+import BootScene from './scenes/bootScene';
+import PreloaderScene from './scenes/preloaderScene';
+import Model from './helpers/model';
+import TitleScene from './scenes/titleScene';
+import GameOver from './scenes/gameOver';
+import OptionsScene from './scenes/optionsScene';
+import CreditsScene from './scenes/creditsScene';
+import WorldScene from './scenes/worldScene';
+import { BattleScene, UIScene } from './scenes/battle';
 import liveUpdate from './dom';
 
 require('babel-core/register');

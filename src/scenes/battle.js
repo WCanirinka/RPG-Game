@@ -3,11 +3,11 @@
 /* eslint-disable import/no-unresolved */
 
 import Phaser from 'phaser';
-import HealthBar from '../Objects/healthBar';
+import HealthBar from '../helpers/healthBar';
 import liveUpdate from '../dom';
 import {
   scoreUpdate, powerAssign, enemySelect,
-} from '../helper';
+} from '../helpers/helper';
 
 // eslint-disable-next-line import/no-mutable-exports
 let score = 0;

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 const fetch = require('node-fetch');
 
 const address = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
