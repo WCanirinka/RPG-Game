@@ -25,12 +25,12 @@ class WorldScene extends Phaser.Scene {
     }
     scoreText = this.add.text(5, 16, `Score : ${score}`, {
       fontSize: '32px',
-      fill: '#000',
+      fill: '#fff',
     });
 
     levelText = this.add.text(5, 50, 'Level :1', {
       fontSize: '32px',
-      fill: '#000',
+      fill: '#fff',
     });
     scoreTextUpdate(scoreText);
     levelUpdate(levelText);
@@ -112,7 +112,7 @@ class WorldScene extends Phaser.Scene {
     this.cursors.down.reset();
   }
 
-  onMeetEnemy(player, zone) {
+  onMeetEnemy(zone) {
     zone.x = Phaser.Math.RND.between(0, this.physics.world.bounds.width);
     zone.y = Phaser.Math.RND.between(0, this.physics.world.bounds.height);
     scoreText.setText(`Score: ${score}`);
