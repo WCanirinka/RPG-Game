@@ -1,5 +1,5 @@
 /* eslint-disable import/no-cycle */
-
+/* eslint-disable import/no-unresolved */
 import Phaser from 'phaser';
 
 import config from '../Config/config';

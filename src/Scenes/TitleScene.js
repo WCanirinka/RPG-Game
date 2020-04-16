@@ -1,4 +1,5 @@
 /* eslint-disable class-methods-use-this */
+/* eslint-disable import/no-unresolved */
 
 import Phaser from 'phaser';
 import config from '../Config/config';

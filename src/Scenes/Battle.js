@@ -1,5 +1,6 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable prefer-destructuring */
+/* eslint-disable import/no-unresolved */
 
 import Phaser from 'phaser';
 import HealthBar from '../Objects/healthBar';
