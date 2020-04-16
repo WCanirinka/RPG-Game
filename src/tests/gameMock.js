@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import Phaser from 'phaser';
 import WorldScene from '../scenes/worldScene';
 import { BattleScene, UIScene } from '../scenes/battle';
