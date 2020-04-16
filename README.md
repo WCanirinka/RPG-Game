@@ -136,8 +136,6 @@ he is the most valuable enemy that needs to be defeated since he is very strong 
 ##### battle scene
 ![screenshot](build/assets/screenshots/battle.png)
 
-<!-- ##### Game Over
-![screenshot](assets/screenshots/ over.png) -->
 
 ## Technologies used
 
@@ -152,11 +150,6 @@ he is the most valuable enemy that needs to be defeated since he is very strong 
 * [Netlify](https://app.netlify.com/) for the deployment
 * [Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) for the leaderboard
 
-
-<!-- ## Video presentation
-
-
-https://www.loom.com/ -->
 
 ## contact
 
