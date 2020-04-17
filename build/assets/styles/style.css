@@ -1,0 +1,63 @@
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  position: relative;
+  background-color: rgba(29, 15, 41, 0.445);
+}
+
+#leaderboard {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgba(37, 37, 37, 0.911);
+}
+
+#leaderboard h1 {
+  color: #e4dcdc;
+}
+
+#leaderboard h4 {
+  width: 100%;
+  border-bottom: 1px solid #5e5e5e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #dfd7d7;
+}
+
+#leaderboard h4 span {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.247);
+}
+
+#username {
+  background-color: rgba(0, 0, 0, 0.699);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.349);
+  width: 99vw;
+  height: 98.5vh;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  z-index: 100;
+}
+
+#username form {
+  margin-top: 40vh;
+  margin-left: 35vw;
+}
+
+.header {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
