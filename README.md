@@ -211,4 +211,4 @@ Give a ⭐️ if you like this project!
 [contributors-url]: https://github.com/WCanirinka/RPG-Game/graphs/contributors
 [issues-shield]: https://img.shields.io/badge/issues-0-%2300ff00
 [issues-url]: https://github.com/WCanirinka/RPG-Game/issues/
-[mast]: https://raw.githubusercontent.com/phalado/JS-Capstone/development/Images/masteryBadge.png
+[mast]: https://raw.githubusercontent.com/WCanirinka/RPG-Game/master/build/assets/grade/masteryBadge.png
